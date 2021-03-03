@@ -7,7 +7,7 @@ import domain.Product;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
-import java.util.List;
+import java.util.Set;
 
 public class ShopService {
 
@@ -24,7 +24,7 @@ public class ShopService {
                 .setParameter("personName", personName)
                 .getSingleResult();
 
-        List<Product> products = person.getProducts();
+        Set<Product> products = person.getProducts();
         System.out.println(products);
 
         entityManager.close();
@@ -36,7 +36,7 @@ public class ShopService {
                 .setParameter("productName", productName)
                 .getSingleResult();
 
-        List<Person> persons = product.getPersons();
+        Set<Person> persons = product.getPersons();
         System.out.println(persons);
 
         entityManager.close();

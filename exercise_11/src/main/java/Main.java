@@ -25,6 +25,8 @@ public class Main {
                 case "/removeProduct" -> shopService.removeProduct(values[1]);
 
                 case "/buy" -> shopService.buy(values[1], values[2]);
+
+                case "/check" -> shopService.check(values[1]);
             }
         }
     }

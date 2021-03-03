@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ShopService {
 
-    private EntityManagerFactory entityManagerFactory;
+    private final EntityManagerFactory entityManagerFactory;
 
     public ShopService() {
         entityManagerFactory = PersistenceConfig.getEntityManagerFactory();

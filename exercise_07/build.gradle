@@ -1,0 +1,11 @@
+
+dependencies {
+    implementation 'org.openjdk.jol:jol-core:0.10'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
+    }
+}
+

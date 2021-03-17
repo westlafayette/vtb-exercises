@@ -1,5 +1,6 @@
 rootProject.name = 'vtb-exercises'
 
 include 'exercise_06'
+include 'exercise_07'
 include 'exercise_11'
 include 'exercise_12'
